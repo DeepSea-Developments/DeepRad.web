@@ -1,0 +1,140 @@
+# Project information
+site_name: DeepRad SDR
+site_url: https://deeprad.co
+site_author: DeepSea Developments
+site_description: >-
+  DeepRad is a modular SDR based on the RTL-SDR project that allows 
+  and easy integration of one or more into your projects!.
+
+# Copyright
+copyright: Copyright &copy; 2024 DeepRad by DeepSea Developments
+
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    repo: material/github
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  features:
+    # - navigation.instant #Without this, the jump from home page to other subpages fails.
+    # - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.tracking
+    - navigation.expand
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+
+
+  palette: 
+    # Palette toggle for light mode
+    - scheme: deepdeck
+      toggle:
+        icon: material/weather-sunny 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+
+repo_url: https://github.com/DeepSea-Developments/DeepRad.web
+repo_name: DeepRad.web
+edit_uri: edit/mkdocs/docs/
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+ 
+plugins:
+ 
+  - search
+  - tags
+  - glightbox
+  - blog:
+      archive: false
+      archive_toc: false
+      categories: false
+      categories_toc: false
+
+    # CI=1 mkdocs build
+  - group:
+      enabled: !ENV CI
+      plugins:
+        - social
+        - git-revision-date-localized:
+            enable_creation_date: true
+            type: timeago
+        - git-committers:
+            repository: DeepSea-Developments/DeepDeck.Ahuyama.fw
+            branch: mkdocs
+        - minify:
+            minify_html: true
+
+  # INSIDERS=1 mkdocs build
+  - group:
+      enabled: !ENV INSIDERS
+      plugins:
+        - meta
+
+  # Page tree
+nav:
+  - Home: index.md
+  - Quick Start Guide: 
+    - First steps: en/QuickStartGuide/qsg.md
+  - What is an Software Defined Radio (SDR)?:
+    - SDRs: en/QuickStartGuide/sdr.md
