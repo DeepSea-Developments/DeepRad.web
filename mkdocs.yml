@@ -65,6 +65,9 @@ extra:
     - name: English
       link: /
       lang: en
+    - name: Español
+      link: /es/
+      lang: es
 
   consent:
     title: Cookie consent
@@ -103,6 +106,20 @@ markdown_extensions:
 plugins:
  
   - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          nav:
+            - Inicio: index.md
+            - Guía de inicio rápido: es/QuickStartGuide.md
+            - Base de conocimientos: es/KnowledgeBase.md
   - tags
   - glightbox
   - blog:
@@ -134,7 +151,5 @@ plugins:
   # Page tree
 nav:
   - Home: index.md
-  - Quick Start Guide: 
-    - First steps: en/QuickStartGuide/qsg.md
-  - What is an Software Defined Radio (SDR)?:
-    - SDRs: en/QuickStartGuide/sdr.md
+  - Quick Start Guide: en/QuickStartGuide.md
+  - Knowledge Base: en/KnowledgeBase.md

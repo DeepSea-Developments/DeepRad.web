@@ -492,6 +492,33 @@ progress {
   font-weight: 300;
 }
 
+.card-header-custom { 
+  padding: 0.5rem 1rem;
+  margin-bottom: -10px;
+  margin-left: 30px;
+  color: white;
+  background-color: red;
+  width: 200px;
+  border-radius: 50px !important;
+  text-align: center; 
+  position: relative;
+  z-index: 5;
+}
+
+.card-custom { 
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1.5rem;
+  background-color: #262626;
+  color: white;
+}
+
+.bg-custom {
+  --bs-bg-opacity: 1;
+  color: white !important;
+  background-color:  #1a1a1a !important;
+}
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -499,7 +526,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -510,7 +537,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-2 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -521,7 +548,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -532,7 +559,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-4 {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -543,7 +570,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-5 {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
@@ -554,7 +581,16 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-6 {
-    font-size: 2.5rem;
+    font-size: 0.5rem;
+  }
+}
+
+.ms-custom {
+  margin-left: 0rem !important;
+}
+@media (min-width: 1200px) {
+  .ms-custom {
+    margin-left: 3rem !important;
   }
 }
 
@@ -11076,8 +11112,7 @@ footer a:hover, footer a:active, footer a:focus {
   text-decoration: underline;
 }
 
-.masthead {
-  background-color: #f8f9fa;
+.masthead { 
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
