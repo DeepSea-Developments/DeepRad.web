@@ -106,12 +106,12 @@ plugins:
         - locale: es
           name: Español
           build: true
-          nav:
-            - Inicio: index.md
-            - Guía de inicio rápido: es/QuickStartGuide.md
-            - Base de conocimientos: es/KnowledgeBase.md
-  - tags
-  - glightbox
+          # nav:
+          #   - Inicio: index.md
+          #   - Guía de inicio rápido: es/QuickStartGuide.md
+          #   - Base de conocimientos: es/KnowledgeBase.md
+  # - tags
+  # - glightbox
   # - blog:
   #     archive: false
   #     archive_toc: false
