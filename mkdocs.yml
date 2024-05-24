@@ -40,17 +40,9 @@ theme:
 
 
   palette: 
-    # Palette toggle for light mode
-    - scheme: deepdeck
-      toggle:
-        icon: material/weather-sunny 
-        name: Switch to dark mode
-
     # Palette toggle for dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
+    scheme: deepdeck
+    primary: black  
 
 
 repo_url: https://github.com/DeepSea-Developments/DeepRad.web

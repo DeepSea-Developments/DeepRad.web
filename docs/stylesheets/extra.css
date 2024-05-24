@@ -1,38 +1,88 @@
-:root > * {
-    --md-primary-fg-color:        #06668e;
-    --md-primary-fg-color--light: #ffbe55;
-    --md-primary-fg-color--dark:  #ffbe55;
-  }
+:root {
+  --md-default-bg-color: #191919;
+  --md-default-fg-color: #dcdcdc;
+  --md-primary-fg-color: #dcdcdc;
+  --md-accent-fg-color: #dcdcdc;
+  --md-primary-bg-color: #191919;
+  --md-accent-bg-color: #191919;
+  --md-paper-bg-color: #191919;
 
-  [data-md-color-scheme="deepdeck"] {
-    /* Primary color shades */
-    --md-primary-fg-color:        #06668e;
-    --md-primary-fg-color--light: #e5e5e5;
-    --md-primary-fg-color--dark:  #e5e5e5;
-    --md-primary-bg-color:        #e5e5e5;
-    --md-primary-fg-color--light: #e5e5e5;
-    --md-primary-fg-color--dark:  #ffbe55;
-    
-    /* Accent color shades */
-    --md-accent-fg-color:                #ffbe55;
-    --md-accent-fg-color--transparent:   #9a7131;
-    --md-accent-bg-color:                #06668e;
-    --md-accent-bg-color--light:         #06668e;
+  --md-footer-fg-color:        #ffbe55;
+  --md-footer-bg-color:        #3e3e3e;
+}
 
-    --md-typeset-color:         #06668e;
-    --md-typeset-a-color:         #9a7131;
+[data-md-color-scheme="deepdeck"] {
+  --md-footer-fg-color:        #ffbe55;
+  --md-footer-bg-color:        #3e3e3e;
+}
 
-    --md-button-color:          #06668e;
-    
-    --md-footer-fg-color:        #ffbe55;
-    --md-footer-bg-color:        #3e3e3e;
-    
-  }
+body {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
 
-  .md_button {
-    color:aqua;
-  }
+code{
+  background-color:#434343 !important;
+  color: var(--md-default-fg-color) !important;
+}
 
-  [data-md-color-scheme="slate"] {
-    --md-hue: 210; 
-  }
+.md-top{
+  background-color: #ff0000;
+  color: var(--md-default-fg-color);
+}
+
+.md-top:hover{
+  background-color: #ff3115;
+  color: var(--md-default-fg-color);
+}
+
+
+.md-footer-meta {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.md-nav__link, .md-footer__link {
+  color: var(--md-default-fg-color);
+}
+
+.md-nav__item:hover > .md-nav__link {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-accent-fg-color);
+}
+
+.md-select__inner{
+  background-color: white !important;
+  color: var(--md-default-bg-color);
+}
+
+.md-search__suggest{
+  background-color: white !important;
+  color: #000;
+}
+
+.md-search__scrollwrap{
+  background-color: white !important;
+  color: #000 !important;
+}
+
+.md-search-result .md-typeset h1 {
+  color: #000 !important;
+}
+
+.md-search-result .md-typeset h2 {
+  color: #757575 !important;
+}
+
+.md-typeset .md-content__button{
+  color: #757575 !important;
+}
+
+.md-nav__title{
+  color: var(--md-default-fg-color);
+}
+ 
+
+h1, h2{
+  color: var(--md-default-fg-color) !important;
+}
