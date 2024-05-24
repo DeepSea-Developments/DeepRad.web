@@ -128,7 +128,7 @@ plugins:
             type: timeago
         - git-committers:
             repository: DeepSea-Developments/DeepRad.web
-            branch: mkdocs
+            branch: main
         # - minify:
         #     minify_html: true
 
