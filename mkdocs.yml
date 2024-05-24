@@ -122,11 +122,11 @@ plugins:
             - Base de conocimientos: es/KnowledgeBase.md
   - tags
   - glightbox
-  - blog:
-      archive: false
-      archive_toc: false
-      categories: false
-      categories_toc: false
+  # - blog:
+  #     archive: false
+  #     archive_toc: false
+  #     categories: false
+  #     categories_toc: false
 
     # CI=1 mkdocs build
   - group:
