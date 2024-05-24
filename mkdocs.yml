@@ -106,10 +106,10 @@ plugins:
         - locale: es
           name: Español
           build: true
-          # nav:
-          #   - Inicio: index.md
-          #   - Guía de inicio rápido: es/QuickStartGuide.md
-          #   - Base de conocimientos: es/KnowledgeBase.md
+          nav:
+            - Inicio: index.md
+            - Guía de inicio rápido: es/QuickStartGuide.md
+            - Base de conocimientos: es/KnowledgeBase.md
   # - tags
   # - glightbox
   # - blog:
@@ -119,9 +119,9 @@ plugins:
   #     categories_toc: false
 
     # CI=1 mkdocs build
-  # - group:
-  #     enabled: !ENV CI
-  #     plugins:
+  - group:
+      enabled: !ENV CI
+      plugins:
          # - social # When included things crashed, not sure why.
         # - git-revision-date-localized:
         #     enable_creation_date: true
@@ -129,8 +129,8 @@ plugins:
         # - git-committers:
         #     repository: DeepSea-Developments/DeepRad.web
         #     branch: mkdocs
-        # - minify:
-        #     minify_html: true
+        - minify:
+            minify_html: true
 
   # INSIDERS=1 mkdocs build
   - group:
