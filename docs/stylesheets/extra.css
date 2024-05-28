@@ -26,6 +26,14 @@ code{
   color: var(--md-default-fg-color) !important;
 }
 
+.md-typeset a:hover {
+  color: #ff0000;
+}
+
+.md-typeset a{
+  color: #ff0000;
+}
+
 .md-top{
   background-color: #ff0000;
   color: var(--md-default-fg-color);
@@ -48,8 +56,14 @@ code{
 
 .md-nav__item:hover > .md-nav__link {
   background-color: var(--md-default-bg-color);
-  color: var(--md-accent-fg-color);
+  color: #ff3115;
 }
+
+.md-nav__item  > .md-nav__link--active{
+  color: #ff3115;
+}
+
+
 
 .md-select__inner{
   background-color: white !important;
