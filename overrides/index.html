@@ -247,41 +247,44 @@
                     </div>
                 </div>
 
-                <div class="multiple-items">
-                    <div class="m-4">
-                        <div style="min-height: 300px;">
-                            <img src="/assets/img/photos/Recurso 6.png" class="img-fluid">
+                <div class="position-relative">
+                    
+                    <div class="multiple-items main-image">
+                        <div class="m-4">
+                            <div style="min-height: 300px;">
+                                <img src="/assets/img/photos/Recurso 6.png" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                    <div class="m-4">
-                        <div style="min-height: 300px;">
-                            <img src="/assets/img/photos/Recurso 7.png" class="img-fluid">
+                        <div class="m-4">
+                            <div style="min-height: 300px;">
+                                <img src="/assets/img/photos/Recurso 7.png" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                    <div class="m-4">
-                        <div style="min-height: 300px;">
-                            <img src="/assets/img/photos/Recurso 8.png" class="img-fluid">
+                        <div class="m-4">
+                            <div style="min-height: 300px;">
+                                <img src="/assets/img/photos/Recurso 8.png" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                    <div class="m-4">
-                        <div style="min-height: 300px;">
-                            <img src="/assets/img/photos/Recurso 10.png" class="img-fluid">
+                        <div class="m-4">
+                            <div style="min-height: 300px;">
+                                <img src="/assets/img/photos/Recurso 10.png" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                    <div class="m-4">
-                        <div style="min-height: 300px;">
-                            <img src="/assets/img/photos/Recurso 12.png" class="img-fluid">
+                        <div class="m-4">
+                            <div style="min-height: 300px;">
+                                <img src="/assets/img/photos/Recurso 12.png" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                    <div class="m-4">
-                        <div style="min-height: 300px;">
-                            <img src="/assets/img/photos/Recurso 13.png" class="img-fluid">
+                        <div class="m-4">
+                            <div style="min-height: 300px;">
+                                <img src="/assets/img/photos/Recurso 13.png" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
+                       
+                    </div> 
+                    <img src="/assets/img/acento.png" class="position-absolute-2 accent-image-2">
                 </div>
 
-                 
-               
             </section>
 
             <!-- What makes DeepRad
@@ -413,7 +416,32 @@
             $('.multiple-items').slick({ 
                 infinite: true,
                 slidesToShow: 3,
-                slidesToScroll: 3
+                slidesToScroll: 3, 
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    } 
+                ]
             });
         </script>
 

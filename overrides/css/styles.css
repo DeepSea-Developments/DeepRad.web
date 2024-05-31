@@ -445,6 +445,14 @@ legend + * {
   height: auto;
 }
 
+.position-absolute-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+}
+
 .main-image {
   z-index: 2; /* Coloca esta imagen delante */
 }
@@ -457,11 +465,24 @@ legend + * {
   z-index: 1; /* Coloca esta imagen detrás */
 }
 
+.accent-image-2 {
+  width: 200px;
+  height: auto;
+  left: -40px;
+  bottom: -40px;
+  z-index: 1; /* Coloca esta imagen detrás */
+}
+
 @media (max-width: 768px) {
   .accent-image {
     width: 100px !important;
     right: -20px !important;
     bottom: -20px !important;
+  }
+  .accent-image-2 {
+    width: 100px !important;
+    left: -1px !important;
+    bottom: -10px !important;
   }
 }
 
