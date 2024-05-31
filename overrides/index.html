@@ -11,9 +11,12 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
         <!-- Core theme CSS (includes Bootstrap)--> 
         <link href="/css/styles.css" rel="stylesheet" />
     </head>
@@ -53,8 +56,9 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div style="justify-content: center; display: flex; min-height: 550px;">
-                                <img src="https://picsum.photos/350/550">
+                            <div class="position-relative" style="justify-content: center; display: flex; min-height: 400px;">
+                                <img src="/assets/img/photos/Recurso 10.png" class="img-fluid main-image">
+                                <img src="/assets/img/acento.png" class="position-absolute accent-image">
                             </div>
                         </div>
                     </div>
@@ -69,8 +73,8 @@
                             <h1 class="display-3 lh-1 mb-4">DeepRad <br>key features</h1>
                         </div>
                         <div class="col">
-                            <div style="justify-content: center; display: flex; min-height: 550px;">
-                                <img src="https://picsum.photos/350/550">
+                            <div style="justify-content: center; display: flex; min-height: 450px;">
+                                <img src="/assets/img/photos/Recurso 9.png" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -139,7 +143,7 @@
                         <div class="card mb-3" style="background-color: transparent; border: none; color: white;">
                         <div class="row" style="min-height: 180px;">
                             <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="/assets/img/AffodabilityAccessibility.png" width="90" height="80" alt="Affordability and accessibility">
+                                <img src="/assets/img/icons/AffodabilityAccessibility.png" width="90" height="80" alt="Affordability and accessibility">
                             </div>
                             <div  class="col-md-8 d-flex align-items-center justify-content-center">
                                 <div class="card-body">
@@ -159,7 +163,7 @@
                         <div class="card mb-3" style="background-color: transparent; border: none; color: white;">
                         <div class="row" style="min-height: 180px;">
                             <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="/assets/img/EasyIntegration.png" width="90" height="80" alt="Easy integration">
+                                <img src="/assets/img/icons/EasyIntegration.png" width="90" height="80" alt="Easy integration">
                             </div>
                             <div  class="col-md-8 d-flex align-items-center justify-content-center">
                                 <div class="card-body">
@@ -183,7 +187,7 @@
                         <div class="card mb-3" style="background-color: transparent; border: none; color: white;">
                             <div class="row" style="min-height: 180px;">
                             <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="/assets/img/VersatileApplications.png" width="90" height="80" alt="Versatile applications">
+                                <img src="/assets/img/icons/VersatileApplications.png" width="90" height="80" alt="Versatile applications">
                                 </div>
                             <div  class="col-md-8 d-flex align-items-center justify-content-center">
                                 <div class="card-body">
@@ -205,7 +209,7 @@
                         <div class="card mb-3" style="background-color: transparent; border: none; color: white;">
                             <div class="row"  style="min-height: 180px;">
                             <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="/assets/img/Customizable.png" width="90" height="80" alt="Customizable">
+                                <img src="/assets/img/icons/Customizable.png" width="90" height="80" alt="Customizable">
                                 </div>
                             <div  class="col-md-8 d-flex align-items-center justify-content-center">
                                 <div class="card-body">
@@ -243,23 +247,40 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-4  mt-3">
-                        <div style="justify-content: center; display: flex; min-height: 300px;">
-                            <img src="https://picsum.photos/350/300">
+                <div class="multiple-items">
+                    <div class="m-4">
+                        <div style="min-height: 300px;">
+                            <img src="/assets/img/photos/Recurso 6.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-md-4  mt-3">
-                        <div style="justify-content: center; display: flex; min-height: 300px;">
-                            <img src="https://picsum.photos/350/300">
+                    <div class="m-4">
+                        <div style="min-height: 300px;">
+                            <img src="/assets/img/photos/Recurso 7.png" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-md-4  mt-3">
-                        <div style="justify-content: center; display: flex; min-height: 300px;">
-                            <img src="https://picsum.photos/350/300">
+                    <div class="m-4">
+                        <div style="min-height: 300px;">
+                            <img src="/assets/img/photos/Recurso 8.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="m-4">
+                        <div style="min-height: 300px;">
+                            <img src="/assets/img/photos/Recurso 10.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="m-4">
+                        <div style="min-height: 300px;">
+                            <img src="/assets/img/photos/Recurso 12.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="m-4">
+                        <div style="min-height: 300px;">
+                            <img src="/assets/img/photos/Recurso 13.png" class="img-fluid">
                         </div>
                     </div>
                 </div>
+
+                 
                
             </section>
 
@@ -282,7 +303,7 @@
                             more people to access SDR technology without a
                             large investment.</p>
 
-                        <p class="lead fw-normal text-white mb-5">Most SDR modules are packaged as finished
+                        <p class="lead fw-normal text-white">Most SDR modules are packaged as finished
                             devices, making them difficult to integrate into
                             custom electronic projects. On the other hand,
                             DeepRad counts on a modular design and flexible
@@ -292,33 +313,89 @@
                 </div>
             </section>
 
-            <!-- Do you want to get a low-cost and flexible SDR solution like DeepRad?-->
-            <section class="container mt-3">
-                <div class="row">
-                    <div class="col-md-12 d-flex align-items-center justify-content-center text-center">
-                        <h2 class="display-4 lh-1 mb-4">Do you want to get a low-cost and flexible SDR<br>
-                            solution like DeepRad?</h2>
-                    </div>
-                    <div class="col-md-12 d-flex align-items-center justify-content-center text-center">
-                        <h2 class="display-4 lh-1 mb-4">Click on the button below to know more.</h2>
-                    </div>
-                    <div class="col-md-12 d-flex align-items-center justify-content-center text-center mt-3">
-                        <button class="btn btn-danger" style="width: 350px; border-radius: 50px; background-color: #dd0b15;">  <h2 class="display-4 m-0">I want a DeepRad</h2></button>
-                    </div>
-                </div>
-            </section>
+            <div class="bg-calamar">
 
-            <!-- Footer-->
-            <footer class="text-center py-5">
-                <div class="container px-5">
-                    <div class="text-white small">
-                        <div class="mb-2">&copy; 2024. «DeepSea Developments». All rights reserved.</div>
+                <section class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="display-3 lh-1">News</h1>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-6 mt-3">
+                            <div class="row"> 
+                                <div class="col-lg-4">
+                                    <div style="justify-content: center; display: flex; min-height: 200px;">
+                                        <img src="/assets/img/photos/Recurso 12.png" class="img-fluid">                              
+                                    </div>
+                                 </div>
+                                 <div  class="col-md-8 d-flex align-items-center justify-content-center mt-3">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Easy integration</h5>
+                                    <p class="card-text">Modular design with
+                                        standard interfaces allows
+                                        seamless incorporation into
+                                        new or existing projects,
+                                        enabling customization.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                             
+                        </div>
+    
+                        <div class="col-lg-6  mt-3"> 
+                            <div class="row"> 
+                                <div class="col-lg-4">
+                                    <div style="justify-content: center; display: flex; min-height: 200px;">
+                                        <img src="/assets/img/photos/Recurso 13.png" class="img-fluid"> 
+                                    </div>                             
+                                 </div>
+                                 <div  class="col-md-8 d-flex align-items-center justify-content-center mt-3">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Easy integration</h5>
+                                    <p class="card-text">Modular design with
+                                        standard interfaces allows
+                                        seamless incorporation into
+                                        new or existing projects,
+                                        enabling customization.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div> 
                     </div>
-                </div>
-            </footer>
+                </section>
+
+                <!-- Do you want to get a low-cost and flexible SDR solution like DeepRad?-->
+                <section class="container mt-3">
+                    <div class="row">
+                        <div class="col-md-12 d-flex align-items-center justify-content-center text-center">
+                            <h2 class="display-4 lh-1 mb-4">Do you want to get a low-cost and flexible SDR<br>
+                                solution like DeepRad?</h2>
+                        </div>
+                        <div class="col-md-12 d-flex align-items-center justify-content-center text-center">
+                            <h2 class="display-4 lh-1 mb-4">Click on the button below to know more.</h2>
+                        </div>
+                        <div class="col-md-12 d-flex align-items-center justify-content-center text-center mt-3">
+                            <button class="btn btn-danger" style="width: 350px; border-radius: 50px; background-color: #dd0b15;">  <h2 class="display-4 m-0">I want a DeepRad</h2></button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer-->
+                <footer class="text-center py-5">
+                    <div class="container px-5">
+                        <div class="text-white small">
+                            <div class="mb-2">&copy; 2024. «DeepSea Developments». All rights reserved.</div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
 
         </div> 
          
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -328,5 +405,17 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script>
+            $('.multiple-items').slick({ 
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3
+            });
+        </script>
+
     </body>
 </html>
