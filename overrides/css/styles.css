@@ -562,7 +562,7 @@ progress {
   margin-left: 30px;
   color: white;
   background-color: red;
-  width: 200px;
+  width: 250px;
   border-radius: 50px !important;
   text-align: center; 
   position: relative;
@@ -586,7 +586,7 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -597,7 +597,7 @@ progress {
 
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -608,7 +608,7 @@ progress {
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -619,7 +619,7 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -630,7 +630,7 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -641,7 +641,7 @@ progress {
 
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
