@@ -426,6 +426,18 @@ legend + * {
   clear: left;
 }
 
+.btn-custom{
+  width: 350px; 
+  border-radius: 50px !important;
+  color: #fff !important;
+  background-color: #dd0b15 !important;
+}
+
+.btn-custom:hover{ 
+  color: #dd0b15 !important;
+  background-color: #fff !important;
+}
+
 .bg-calamar{
   background-image: url('/assets/img/Calamar.png');
   background-size: contain;
