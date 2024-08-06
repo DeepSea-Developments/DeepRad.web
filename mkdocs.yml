@@ -110,6 +110,7 @@ plugins:
             - Inicio: index.md
             - Guía de inicio rápido: es/QuickStartGuide.md
             - Base de conocimientos: es/KnowledgeBase.md
+            - SDR en movimiento: es/SDRontheGO.md
   # - tags
   # - glightbox
   # - blog:
@@ -143,3 +144,4 @@ nav:
   - Home: index.md
   - Quick Start Guide: en/QuickStartGuide.md
   - Knowledge Base: en/KnowledgeBase.md
+  - SDR on the GO: en/SDRontheGO.md
